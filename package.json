@@ -10,6 +10,9 @@
 		"start": "electron .",
 		"pack": "electron-builder --dir",
 		"dist": "electron-builder --macos --linux --windows",
+	  	"dist:mac": "electron-builder --macos",
+	  	"dist:lin": "electron-builder --linux",
+	  	"dist:win": "electron-builder --windows",
 		"release": "np"
 	},
 	"keywords": [],
