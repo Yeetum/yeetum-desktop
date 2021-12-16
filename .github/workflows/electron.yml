@@ -8,8 +8,7 @@ on:
       - main
 # this is where the magic happens, each job happens in parallel btw
 jobs:
-  build_on_mac:
-    runs-on: macOS-latest
+  build:
     steps:
       - uses: actions/checkout@v2
         with:
