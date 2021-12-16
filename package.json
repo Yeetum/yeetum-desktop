@@ -38,7 +38,7 @@
 	"np": {
 		"publish": false,
 		"releaseDraft": false,
-	  	"branch": "master"
+	  	"branch": "main"
 	},
 	"build": {
 		"appId": "com.yeetum.missioncontrol",
