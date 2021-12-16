@@ -1,6 +1,5 @@
-import path from 'node:path';
-import {app, BrowserWindow, Menu} from 'electron';
-
+const path = require('path');
+const {app, BrowserWindow, Menu} = require('electron');
 const {autoUpdater} = require('electron-updater');
 const {is} = require('electron-util');
 const unhandled = require('electron-unhandled');
