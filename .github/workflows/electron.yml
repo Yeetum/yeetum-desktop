@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: 14
       - name: Generate
-          uses: skx/github-action-build@master
-          with:
-            builder: .github/build
+        uses: skx/github-action-build@master
+        with:
+          builder: .github/build
       - name: see directory
         run: ls dist/
   build_on_win:
