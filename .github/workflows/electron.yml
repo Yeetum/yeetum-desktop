@@ -11,10 +11,10 @@ jobs:
   build_on_mac:
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
-          ref: mainf
-      - uses: actions/setup-node@master
+          ref: main
+      - uses: actions/setup-node@v2
         with:
           node-version: 14
       - name: see directory
@@ -22,10 +22,10 @@ jobs:
   build_on_win:
     runs-on: windows-2016
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
           ref: feature/github-actions
-      - uses: actions/setup-node@master
+      - uses: actions/setup-node@v2
         with:
           node-version: 14
       - name: see directory
