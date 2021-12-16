@@ -1,6 +1,6 @@
 {
 	"name": "yeetum-desktop",
-	"version": "1.0.0",
+	"version": "1.0.1-0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -70,7 +70,7 @@
 				"deb"
 			],
 			"category": "Network;Chat",
-		  	"maintainer": "support@yeetum.com"
+			"maintainer": "support@yeetum.com"
 		}
 	}
 }
