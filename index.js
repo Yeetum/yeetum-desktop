@@ -1,4 +1,3 @@
-'use strict';
 const path = require('path');
 const {app, BrowserWindow, Menu} = require('electron');
 const {autoUpdater} = require('electron-updater');
@@ -35,7 +34,7 @@ const createMainWindow = async () => {
 		title: app.name,
 		show: false,
 		width: 600,
-		height: 400
+		height: 400,
 	});
 
 	win.on('ready-to-show', () => {
