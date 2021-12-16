@@ -1,10 +1,10 @@
 # name of your github action
-name: CI
+name: ElectronBuilder
 # this will help you specify where to run
 on:
   push:
     branches:
-      # this will run on the electron branch
+      # this will run on the main branch
       - main
 # this is where the magic happens, each job happens in parallel btw
 jobs:
