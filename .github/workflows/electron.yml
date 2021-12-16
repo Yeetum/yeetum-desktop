@@ -9,6 +9,7 @@ on:
 # this is where the magic happens, each job happens in parallel btw
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
