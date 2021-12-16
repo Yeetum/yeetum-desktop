@@ -8,8 +8,8 @@ on:
       - main
 # this is where the magic happens, each job happens in parallel btw
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build_on_mac:
+    runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -17,12 +17,15 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: Generate
-        uses: skx/github-action-build@master
-        with:
-          builder: .github/build
+      - name: Install dependencies
+        run: yarn install
+      - name: Build App
+        run: yarn dist:mac
       - name: see directory
+        run: ls
+      - name: see dist directory
         run: ls dist/
+
   build_on_win:
     runs-on: windows-2016
     steps:
