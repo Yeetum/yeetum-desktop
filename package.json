@@ -30,10 +30,13 @@
 		"xo": "^0.47.0"
 	},
 	"xo": {
-		"envs": [
-			"node",
-			"browser"
-		]
+	  "envs": [
+		"node",
+		"browser"
+	  ],
+	  "rules": {
+	  	"unicorn/prefer-module": "off"
+	  }
 	},
 	"np": {
 		"publish": false,

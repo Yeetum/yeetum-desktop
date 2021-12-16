@@ -1,5 +1,6 @@
-const path = require('path');
-const {app, BrowserWindow, Menu} = require('electron');
+import path from 'node:path';
+import {app, BrowserWindow, Menu} from 'electron';
+
 const {autoUpdater} = require('electron-updater');
 const {is} = require('electron-util');
 const unhandled = require('electron-unhandled');
@@ -18,12 +19,12 @@ app.setAppUserModelId('com.yeetum.missioncontrol');
 // Uncomment this before publishing your first version.
 // It's commented out as it throws an error if there are no published versions.
 if (!is.development) {
- 	const FOUR_HOURS = 1000 * 60 * 60 * 4;
- 	setInterval(() => {
- 		autoUpdater.checkForUpdates();
- 	}, FOUR_HOURS);
+	const FOUR_HOURS = 1000 * 60 * 60 * 4;
+	setInterval(() => {
+		autoUpdater.checkForUpdates();
+	}, FOUR_HOURS);
 
- 	autoUpdater.checkForUpdates();
+	autoUpdater.checkForUpdates();
 }
 
 // Prevent window from being garbage collected
