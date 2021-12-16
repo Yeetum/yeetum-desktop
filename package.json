@@ -1,6 +1,6 @@
 {
 	"name": "yeetum-desktop",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -30,18 +30,18 @@
 		"xo": "^0.47.0"
 	},
 	"xo": {
-	  "envs": [
-		"node",
-		"browser"
-	  ],
-	  "rules": {
-	  	"unicorn/prefer-module": "off"
-	  }
+		"envs": [
+			"node",
+			"browser"
+		],
+		"rules": {
+			"unicorn/prefer-module": "off"
+		}
 	},
 	"np": {
 		"publish": false,
 		"releaseDraft": false,
-	  	"branch": "main"
+		"branch": "main"
 	},
 	"build": {
 		"appId": "com.yeetum.missioncontrol",
